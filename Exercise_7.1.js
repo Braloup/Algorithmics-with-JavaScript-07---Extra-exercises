@@ -8,14 +8,16 @@
 
  const readLineSync = require("readline-sync"); //Call the module for ask the user.
 
-
+//function generate a random number and ask user t ofind the guess number.
  let guessNumber = () => {
 
-   let result = Math.floor(Math.random() * 100);
-   let userResult
+   let result = Math.floor(Math.random() * 100);//Generate a random number.
+   let userResult;
+
    do {
-     userResult = readLineSync.question("Guess The number: ");
-     if (result < userResult) {
+     userResult = readLineSync.question("Guess The number: ");//Ask the user the guess.
+
+     if (result < userResult) {//The user may enter the guess number to get out the loop.
        console.log("To hight");
 
      } else if (result > userResult) {
