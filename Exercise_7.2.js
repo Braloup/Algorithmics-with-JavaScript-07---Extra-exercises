@@ -7,7 +7,6 @@
 const readLineSync = require("readline-sync"); //Call the module to ask question to the user.
 
 let userNumber = readLineSync.question("Enter an integer: "); //Enter the integer.
-
 //Function who generate the first Fibonacci numbers after the user input.
 let firstFibonacci = (userNumber) => {
 
